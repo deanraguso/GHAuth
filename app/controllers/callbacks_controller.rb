@@ -3,4 +3,6 @@ class CallbacksController < Devise::OmniauthCallbacksController
     @user = User.for_onmiauth(request.env["omniauth.auth"]) 
     signin_and_redirect @user
     end
+
+    
 end
